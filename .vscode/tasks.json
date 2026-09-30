@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Mini Mini Chinchin: Dev Server",
+			"type": "shell",
+			"command": "npx",
+			"args": [
+				"--yes",
+				"--package=node@22",
+				"--call",
+				"node node_modules/next/dist/bin/next dev"
+			],
+			"isBackground": true,
+			"group": "build"
+		},
+		{
+			"label": "Mini Mini Chinchin: Dev Server",
+			"type": "shell",
+			"command": "/bin/zsh",
+			"args": [
+				"-lc",
+				"export PATH=\"/Users/mac/.npm/_npx/1c42e2583fe60b26/node_modules/node/bin:/Applications/ChatGPT.app/Contents/Resources/cua_node/bin:$PATH\" && npm run dev"
+			],
+			"isBackground": true,
+			"group": "build"
+		}
+	]
+}
